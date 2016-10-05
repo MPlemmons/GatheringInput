@@ -3,9 +3,12 @@
 <head>
 <title>Gathering Input</title>
 <script>
-  getName(){
-  var fullName;
-  fullName = getElementById("first").value;
+  function getName(){
+  var firstName;
+  var lastName;
+  firstName = document.getElementById("first").value;
+  lastName = document.getElementById("last").value;
+  var fullName = firstName + " " + lastName;
   document.getElementById("message").innerHTML = fullName;
 }
 </script>
@@ -16,8 +19,4 @@
    <button type="button" id="doneButton" onclick="getName();">Done</button>
    <p id="message"></p>
 </body>
-
-
-
-
 </html>
